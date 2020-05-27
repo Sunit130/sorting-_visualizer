@@ -1,13 +1,5 @@
 
-// let arr = [];
-// let length = 400;
-// let w = 2;
-// let min = 5;
-// let max = 500;
 let sleep_time = 10;
-// let show_time = 1000;
-// let gap;
-// let states = [];
 
 async function merge(arr, l, m, r){
     let n1 = m - l +1;
@@ -23,7 +15,6 @@ async function merge(arr, l, m, r){
         states[m+1+i] = 1;
     }
     let i = 0, j =0, k = l;
-    // await sleep(show_time);
     while(i<n1 && j<n2){
 
         if (L[i] <= R[j]) {
@@ -56,7 +47,6 @@ async function merge(arr, l, m, r){
     }
     for(let i=l;i<=r;i++)
         states[i]=-1;
-    // await sleep(100);
 }
 
 async function mergeSort(arr, l, r){
@@ -83,16 +73,3 @@ function merge_draw(){
         rect(gap + j*w, height - arr[j], w, arr[j]);
     }
 }
-
-// function setup(){
-//     createCanvas(_w,_h);
-//     // console.log(arr);
-//     // frameRate(20);
-//     // for(i=0;i<length;i++){
-//     //     states.push(-1);
-//     //     arr.push(random(min,max));
-//     // }
-//     // gap = (width - (length * w))/2;
-//
-//     // mergeSort(arr, 0, arr.length -1);
-// }
