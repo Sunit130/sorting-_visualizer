@@ -41,7 +41,7 @@ function draw(){
     if(pos<0)
         pos = 0;
     canv.position(pos,40);
-    background(color('#696660'));
+    background(color('#1c1c1c'));
     for(let j=0;j<length;j++){
         fill(255);
         strokeWeight(0.05);
