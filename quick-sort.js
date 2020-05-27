@@ -1,15 +1,6 @@
-// let arr = [];
-// let length = 100;
-// let w = 5;
-// let min = 5;
-// let max = 500;
-// let states = [];
-let pivot_time = 100;
+
+let pivot_time = 50;
 let swap_time = 2;
-// let start;
-// let end;
-// let gap;
-// let i;
 
 async function partition(arr, start, end){
     pivot_index = start;
@@ -41,16 +32,10 @@ async function partition(arr, start, end){
     for(let i=start;i<=end;i++){
         states[i]=-1;
     }
-    // let temp = arr[pivot_index];
-    // arr[pivot_index] = arr[end];
-    // arr[end] = temp;
-    // console.log(arr);
-    // console.log("p : ",pivot, " i : ",pivot_index);
     return pivot_index;
 }
 
 async function quicksort(arr, start, end){
-    // console.log("s : ",start, "e : ",end);
     if(start>=end){
         return;
     }
@@ -70,20 +55,6 @@ async function swap( arr, i, j){
     arr[i] = arr[j];
     arr[j] = temp
 }
-
-// function setup(){
-//     createCanvas(800,600);
-//     // frameRate(1);
-//     for(i=0;i<length;i++){
-//         states.push(-1);
-//         arr.push(floor(random(min,max)));
-//     }
-//     // console.log(arr);
-//     gap = (width - (length * w))/2;
-//     quicksort(arr, 0, arr.length-1);
-//     i=0;
-//
-// }
 
 function quick_draw(){
     // background(220);
