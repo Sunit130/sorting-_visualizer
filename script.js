@@ -38,7 +38,7 @@ function setup(){
 }
 
 function draw(){
-    // console.log(windowWidth);
+    console.log(windowWidth);
     let pos = (windowWidth - _w)/2;
     if(pos<0)
         pos = 0;
