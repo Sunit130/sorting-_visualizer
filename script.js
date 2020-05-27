@@ -40,7 +40,7 @@ function draw(){
     let pos = (windowWidth - _w)/2;
     if(pos<0)
         pos = 0;
-    canv.position(pos,40);
+    canv.position(pos,30);
     background(color('#1c1c1c'));
     for(let j=0;j<length;j++){
         fill(255);
