@@ -7,63 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
     <style>
-        body{
-            background: #bdb9b1;
-        }
-        select{
-            text-decoration: none;
-            padding: 4px;
-            border-radius: 5px;
-            background: #bdb9b1;
-            border-color: #403e39;
-            color:#383838;
-            outline: none;
-            width:200px;
-            /* background: */
-            /* margin: 10px; */
-        }
+    body{
+        background: #303030;
+    }
+    select{
+        text-decoration: none;
+        padding: 7px;
+        border-radius: 5px;
+        background: #303030;
+        border-color: #fff;
+        color:#fff;
+        outline: none;
+        width:200px;
+        /* background: */
+        /* margin: 10px; */
+    }
 
-        select:disabled, select[disabled]{
-            color: #757575;
-            border-color: #666666;
-        }
+    select:disabled, select[disabled]{
+        color: #757575;
+        border-color: #666666;
+    }
 
-        select:hover:enabled {
-            box-shadow: 0 0 10px 100px #343838 inset;
-            color: #fff;
-            transition: 0.3s;
-        }
+    select:hover:enabled {
+        box-shadow: 0 0 10px 100px #343838 inset;
+        color: #fff;
+        transition: 0.3s;
+    }
 
-        #head_line{
-            margin-left: 45%;
-            font-size: 20px;
-        }
-        #type{
-            margin-top : 640px;
-            margin-left: 45%;
-        }
-        #sort_button{
-            margin-top : 10px;
-        }
-        #generateRandom{
-            margin-top : 10px;
-        }
+    #type{
+        margin-top : 450px;
+        margin-left: 43.5%;
+    }
+    #sort_button{
+        margin-top : 10px;
+    }
+    #generateRandom{
+        margin-top : 10px;
+        margin-left: 5px;
+        width: 140px;
+    }
 
-        #info{
-            margin-left: 0; color: white; font-size:12px;
-        }
+    #info{
+        margin-left: 0; color: white; font-size:12px;
+    }
 
-        .buttons{
-            margin-left:45%;
-        }
-        @media screen and (max-width: 1000px){
-            #head_line{
-                margin-left: 470px;
-                font-size: 20px;
-            }
+    .buttons{
+        display : flex;
+        justify-content : center;
+    }
+    .heading{
+        display : flex;
+        justify-content: center;
+        background: #fff;
+        width : 100%;
+        height : 200px;
+    }
+    @media screen and (max-width: 1000px){
             #type{
-                margin-top : 600px;
-                margin-left: 450px;
+                margin-top : 450px;
+                margin-left: 420px;
             }
             #sort_button{
                 margin-top : 10px;
@@ -74,14 +76,23 @@
                 width: 200px;
             }
 
+
             #info{
                 margin-left: 0; color: white; font-size:12px;
             }
 
             .buttons{
-                margin-left:450px;
+                margin-left:520px;
+            }
+            .heading{
+                display : flex;
+                justify-content: center;
+                background: #fff;
+                width : 1000px;
+                height : 200px;
             }
         }
+
 
 
     </style>
@@ -98,7 +109,11 @@
 </head>
 
 <body>
-        <p id="head_line">Sorting Visualizer</p>
+
+    <div class="heading">
+        <!-- <p>Sorting Visulizer</p> -->
+        <!-- <p id="head_line">Sorting Visualizer</p> -->
+    </div>
         <select id="type">
             <option value="1" style="" selected>Bubble Sort</option>
             <option value="2">Selection Sort</option>
@@ -109,11 +124,10 @@
         </select>
         <br>
         <div class="buttons">
-            <button  class="btn btn-outline-dark" id="sort_button" onclick="sortMethod() ">Sort</button>
-            <button  class="btn btn-outline-dark" id="generateRandom" onclick="randomArr()">Generate Array</button>
+            <button  class="btn btn-outline-light" id="sort_button" onclick="sortMethod() ">Sort</button>
+            <button  class="btn btn-outline-light" id="generateRandom" onclick="randomArr()">Generate Array</button>
         </div>
         <p id="info">* Some sorting alorithms are intentionally slowed down for proper visualization</p>
-
 </body>
 
 </html>
