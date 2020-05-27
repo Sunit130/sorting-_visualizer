@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <style>
+    body{
+        background: #bdb9b1;
+    }
+    select{
+        text-decoration: none;
+        padding: 4px;
+        border-radius: 5px;
+        background: #bdb9b1;
+        border-color: #403e39;
+        color:#383838;
+        outline: none;
+        width:200px;
+        /* background: */
+        /* margin: 10px; */
+    }
+
+    select:disabled, select[disabled]{
+        color: #757575;
+        border-color: #666666;
+    }
+
+    select:hover:enabled {
+        box-shadow: 0 0 10px 100px #343838 inset;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    #head_line{
+        margin-left: 45%;
+        font-size: 20px;
+    }
+    #type{
+        margin-top : 600px;
+        margin-left: 45%;
+    }
+    #sort_button{
+        margin-top : 10px;
+    }
+    #generateRandom{
+        margin-top : 10px;
+    }
+
+    #info{
+        margin-left: 0; color: white; font-size:12px;
+    }
+
+    .buttons{
+        margin-left:45%;
+    }
+
+
+
+    </style>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.sound.js"></script>
+    <script src="generateRandom.js"></script>
+    <script src="script.js"></script>
+    <script src="merge-sort.js"></script>
+    <script src="quick-sort.js"></script>
+    <script src="insertion-sort.js"></script>
+    <script src="sellection-sort.js"></script>
+    <script src="bubble-sort.js"></script>
+
+</head>
+
+<body>
+
+    <!-- <div class="container"> -->
+        <p id="head_line">Sorting Visualizer</p>
+        <select id="type">
+            <option value="1" style="" selected>Bubble Sort</option>
+            <option value="2">Selection Sort</option>
+            <option value="3">Insertion Sort</option>
+            <option value="4">Quick Sort</option>
+            <option value="5">Merge Sort</option>
+
+        </select>
+        <br>
+        <!-- <br> -->
+        <div class="buttons">
+            <button  class="btn btn-outline-dark" id="sort_button" onclick="sortMethod() ">Sort</button>
+            <button  class="btn btn-outline-dark" id="generateRandom" onclick="randomArr()">Generate Array</button>
+        </div>
+        <p id="info">* Some sorting alorithms are intentionally slowed down for proper visualization</p>
+
+        <!-- <button type="button" class="btn btn-outline-dark">Dark</button> -->
+    <!-- </div> -->
+    <!-- let arr = [];
+    let length = 400;
+    let w = 2;
+    let min = 5;
+    let max = 500; -->
+</body>
+
+</html>
