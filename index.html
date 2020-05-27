@@ -7,55 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
     <style>
-    body{
-        background: #bdb9b1;
-    }
-    select{
-        text-decoration: none;
-        padding: 4px;
-        border-radius: 5px;
-        background: #bdb9b1;
-        border-color: #403e39;
-        color:#383838;
-        outline: none;
-        width:200px;
-        /* background: */
-        /* margin: 10px; */
-    }
+        body{
+            background: #bdb9b1;
+        }
+        select{
+            text-decoration: none;
+            padding: 4px;
+            border-radius: 5px;
+            background: #bdb9b1;
+            border-color: #403e39;
+            color:#383838;
+            outline: none;
+            width:200px;
+            /* background: */
+            /* margin: 10px; */
+        }
 
-    select:disabled, select[disabled]{
-        color: #757575;
-        border-color: #666666;
-    }
+        select:disabled, select[disabled]{
+            color: #757575;
+            border-color: #666666;
+        }
 
-    select:hover:enabled {
-        box-shadow: 0 0 10px 100px #343838 inset;
-        color: #fff;
-        transition: 0.3s;
-    }
+        select:hover:enabled {
+            box-shadow: 0 0 10px 100px #343838 inset;
+            color: #fff;
+            transition: 0.3s;
+        }
 
-    #head_line{
-        margin-left: 45%;
-        font-size: 20px;
-    }
-    #type{
-        margin-top : 600px;
-        margin-left: 45%;
-    }
-    #sort_button{
-        margin-top : 10px;
-    }
-    #generateRandom{
-        margin-top : 10px;
-    }
+        #head_line{
+            margin-left: 45%;
+            font-size: 20px;
+        }
+        #type{
+            margin-top : 600px;
+            margin-left: 45%;
+        }
+        #sort_button{
+            margin-top : 10px;
+        }
+        #generateRandom{
+            margin-top : 10px;
+        }
 
-    #info{
-        margin-left: 0; color: white; font-size:12px;
-    }
+        #info{
+            margin-left: 0; color: white; font-size:12px;
+        }
 
-    .buttons{
-        margin-left:45%;
-    }
+        .buttons{
+            margin-left:45%;
+        }
+
+        @media screen and (max-width: 1000px){
+            #head_line{
+                margin-left: 450px;
+                font-size: 20px;
+            }
+            #type{
+                margin-top : 600px;
+                margin-left: 450px;
+            }
+            #sort_button{
+                margin-top : 10px;
+            }
+            #generateRandom{
+                margin-top : 10px;
+            }
+
+            #info{
+                margin-left: 0; color: white; font-size:12px;
+            }
+
+            .buttons{
+                margin-left:450px;
+            }
+        }
 
 
 
