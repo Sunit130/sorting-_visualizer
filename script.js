@@ -33,8 +33,6 @@ function isSorted(arr, n)
 
 function setup(){
     canv = createCanvas(_w, _h);
-
-    // text("Some sorting alorithms are intentionally slowed down for proper visualization",20,20);
 }
 
 function draw(){
